@@ -153,8 +153,8 @@ h3 {
 
 /* Existing styles... */
 
-.styleSection {
-  padding: 4% 0 0.2%;
+.style-section {
+  padding: 0;
   color: #3f2218;
   box-shadow: 0 4px 8px #00000061;
 }
@@ -168,7 +168,7 @@ h2 {
   margin: 0;
 }
 
-h2.styleMainTitle:hover {
+h2.style-main-title:hover {
   transition: all 0.3s ease-in-out;
   color: #cd4439;
 }
@@ -179,7 +179,7 @@ h3 {
   margin: 0;
 }
 
-.stylesSubsection {
+.styles-subsection {
   padding: 0 10px;
   background-color: #e79e85;
   display: none;
@@ -190,7 +190,7 @@ h3 {
 }
 
 /* New styles for the layout */
-.modelStylesContainer {
+.model-styles-container {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -202,7 +202,7 @@ h3 {
   margin-bottom: 20px;
 }
 
-.modelStyle {
+.model-style {
   width: 300px; /* Adjust this width as needed */
   margin: 0 10px;
   background-color: #f5cbbe; /* Lighter background color */

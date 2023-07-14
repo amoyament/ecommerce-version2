@@ -1,14 +1,17 @@
 //This will be your homepage!!
 //type rafce and it will build basic structre of your component
 import React from "react";
-// import ModelStyle from "./ModelStyle.jsx";
 import StyleSection from "./ModelStyle.jsx";
-import styles from "./Products.module.css";
+// import ProductComponent from "./TestProduct.jsx";
+// import RenderProducts from "./ProductList.jsx";
 
 const Products = () => {
   return (
     <div>
-      <StyleSection className={styles.background} />
+      <StyleSection />
+      {/* <RenderProducts /> */}
+      {/* <ProductComponent /> */}
+      {/* <ProductList /> */}
     </div>
   );
 };

@@ -1,4 +1,5 @@
 import React from "react";
+import "./Footer.css";
 
 const Footer = () => {
   return (
@@ -9,25 +10,25 @@ const Footer = () => {
           <ul class="social-icons">
             <li>
               <a href="https://www.facebook.com/">
-                <img src="./favicon.ico" alt="Facebook Icon" class="socialbutton" />
+                <img src="photos/iconfb.png" alt="Facebook Icon" class="socialbutton" />
               </a>
             </li>
 
             <li>
               <a href="https://www.instagram.com/">
-                <img src="../photos/iconinsta.png" alt="Instagram Icon" class="socialbutton" />
+                <img src="photos/iconinsta.png" alt="Instagram Icon" class="socialbutton" />
               </a>
             </li>
 
             <li>
               <a href="https://www.snapchat.com/">
-                <img src="../photos/iconsnap.png" alt="Snapchat Icon" class="socialbutton" />
+                <img src="photos/iconsnap.png" alt="Snapchat Icon" class="socialbutton" />
               </a>
             </li>
 
             <li>
               <a href="https://www.twitter.com/">
-                <img src="../photos/icontwit.png" alt="Twitter Icon" class="socialbutton" />
+                <img src="photos/icontwit.png" alt="Twitter Icon" class="socialbutton" />
               </a>
             </li>
           </ul>
