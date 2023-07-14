@@ -3,7 +3,7 @@
 import React from "react";
 import StyleSection from "./ModelStyle.jsx";
 // import ProductComponent from "./TestProduct.jsx";
-// import RenderProducts from "./ProductList.jsx";
+// import ProductList from "./ProductList.jsx";
 
 const Products = () => {
   return (

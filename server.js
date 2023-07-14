@@ -5,6 +5,14 @@ const mysql = require("mysql");
 const path = require("path");
 const bodyParser = require("body-parser");
 const port = 5000;
+const cors = require("cors");
+
+app.use(
+  cors({
+    origin: "*",
+  })
+);
+
 app.use(express.json());
 const connection = mysql.createConnection({
   host: "127.0.0.1",
@@ -12,6 +20,7 @@ const connection = mysql.createConnection({
   password: "password",
   database: "Ecomm",
 });
+
 connection.connect((error) => {
   if (error) {
     console.error("Error connecting to the database:", error);
@@ -27,8 +36,10 @@ app.get("/jsondata", (req, res) => {
       console.error("Error executing the query:", error);
       res.status(500).send("Internal Server Error");
     } else {
-      console.log(results);
-      res.status(200).json(results);
+      // console.log(results);
+      let data = Object.values(JSON.parse(JSON.stringify(results)));
+      console.log(data);
+      res.status(200).send(JSON.stringify(data));
     }
   });
 });

@@ -1,23 +1,23 @@
 import React, { useEffect, useState } from "react";
-import axios from "axios";
 
-const RenderProducts = () => {
+const ProductList = () => {
   const [products, setProducts] = useState([]);
 
   useEffect(() => {
-    fetchProducts();
-  }, []);
-
-  const fetchProducts = () => {
-    axios
-      .get("/jsondata")
-      .then((response) => setProducts(response.data))
+    fetch("http://127.0.0.1:5000/jsondata")
+      .then((response) => {
+        console.log({ response });
+        response.json();
+      })
+      .then((data) => {
+        console.log({ data });
+        setProducts(data);
+      })
       .catch((error) => console.error("Error fetching products:", error));
-  };
+  }, []);
 
   return (
     <div>
-      <h1>Product List</h1>
       <div id="products">
         {products.map((product) => (
           <div className="product" key={product.id}>
@@ -26,7 +26,7 @@ const RenderProducts = () => {
             <div className="overlay">
               <div className="description">{product.description}</div>
             </div>
-            <p className="price">${product.price}</p>
+            <p className="price">{product.price}</p>
             <a className="order-button" href="../cart/indexCa.html">
               Add to Order
             </a>
@@ -37,4 +37,4 @@ const RenderProducts = () => {
   );
 };
 
-export default RenderProducts;
+export default ProductList;
