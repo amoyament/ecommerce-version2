@@ -1,0 +1,182 @@
+body {
+  font-family: Optima, sans-serif;
+  line-height: 1.5;
+  background-color: wheat;
+  width: 100vw;
+}
+
+.hero {
+  z-index: 0;
+  color: #f3e6ce;
+  background-image: url("/public/Photos/heroimage.jpeg");
+  opacity: 0.75;
+  background-size: cover;
+  background-position: center;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  z-index: 1;
+}
+
+.hero h2 {
+  margin-top: 0;
+  text-shadow: 10px;
+  font-size: 250%;
+  text-shadow: 3px 3px 0 #000000ce;
+}
+
+.hero p {
+  font-size: 110%;
+  margin: 28% 10%;
+  text-shadow: 2px 2px 0 #000000ce;
+}
+
+.hero-btn {
+  background-color: #cd4439;
+  color: #f2f2f2;
+  font-size: 50%;
+  font-weight: bold;
+  text-decoration: none;
+  padding: 1% 3%;
+  border-radius: 50px;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0 5px 5px #000000ce;
+}
+
+.hero-btn:hover {
+  background-color: #f2f2f2;
+  color: #cd4439;
+  border: 2px solid #cd4439;
+}
+
+.featured h4 {
+  color: #3f2218;
+  text-align: center;
+  font-size: 120%;
+  font-weight: bold;
+  margin: 8% 0 4%;
+}
+
+.subsection {
+  text-align: center;
+  width: 100%;
+  padding: 0;
+  color: #f3e6ce;
+  align-items: center;
+  background-image: url("/public/Photos/warpockets.webp");
+  background-size: cover;
+  background-position: center;
+  padding-bottom: 2%;
+}
+
+.subsection h4 {
+  position: relative;
+  font-size: 150%;
+  font-weight: bold;
+  padding-top: 5%;
+  margin: 5% 0%;
+  text-decoration: none;
+}
+
+.subsection p {
+  font-size: 100%;
+  line-height: 1.5;
+  margin-bottom: 2%;
+  padding: 0% 10%;
+}
+
+.page-link {
+  text-decoration: none;
+}
+
+.featured h4 {
+  color: #3f2218;
+  text-align: center;
+  font-size: 120%;
+  font-weight: bold;
+  padding-bottom: 10px;
+  margin: 8% 0 4%;
+}
+
+.pvw-title2 span {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .hero {
+    height: 515px;
+  }
+
+  .hero h2 {
+    font-size: 300%;
+    text-shadow: 3px 3px 0 #000000ce;
+  }
+
+  .hero p {
+    font-size: 180%;
+    margin: 16% 0% 20%;
+  }
+
+  .hero-btn {
+    font-size: 80%;
+    font-weight: normal;
+  }
+
+  .featured h4 {
+    font-size: 180%;
+    font-weight: bold;
+    text-align: center;
+    margin: 1% 0;
+  }
+
+  .pvw-title:after {
+    content: "We believe that professional attire shouldn't have to compromise comfort, practicality, or style. That's why we design every article of clothing with pockets, to eliminate the frustration of having to carry a purse or sacrifice functionality. Our commitment to functionality and inclusivity is inspired by the ongoing war on pockets in women's clothing. We strive to make a difference in this industry by offering comfortable yet stylish clothing options that enable women to balance motherhood, education, the boardroom, and so much more without compromising on their personal style. Our goal is to take professional clothing from sexist to sexy, by promoting inclusivity and empowering women to feel confident and productive in any setting.";
+  }
+
+  .subsection h4 {
+    font-size: 220%;
+  }
+
+  .subsection p {
+    font-size: 150%;
+    padding: 1% 8%;
+  }
+}
+
+@media (min-width: 1020px) {
+  .hero {
+    height: 90vh;
+  }
+
+  .hero h2 {
+    font-size: 350%;
+    margin-top: 7%;
+  }
+
+  .hero p {
+    font-size: 150%;
+    margin: 1%;
+  }
+
+  .hero-btn {
+    font-size: 80%;
+    padding: 0 1%;
+  }
+
+  .subsection a {
+    padding: 0;
+  }
+
+  .subsection h4 {
+    font-size: 250%;
+    margin: 5% 0% 0%;
+  }
+
+  .subsection p {
+    font-size: 150%;
+    padding: 1% 10%;
+  }
+}

@@ -4,16 +4,14 @@ const ProductList = () => {
   const [products, setProducts] = useState([]);
 
   useEffect(() => {
-    fetch("http://127.0.0.1:5000/jsondata")
-      .then((response) => {
-        console.log({ response });
-        response.json();
-      })
+    fetch("http://127.0.0.1:5000/allproducts")
+      .then((response) => response.json())
       .then((data) => {
-        console.log({ data });
         setProducts(data);
       })
-      .catch((error) => console.error("Error fetching products:", error));
+      .catch((error) => {
+        console.error("Error fetching products:", error);
+      });
   }, []);
 
   return (

@@ -3,7 +3,7 @@
 import React from "react";
 import StyleSection from "./ModelStyle.jsx";
 // import ProductComponent from "./TestProduct.jsx";
-// import ProductList from "./ProductList.jsx";
+import ProductList from "./ProductList.jsx";
 
 const Products = () => {
   return (
@@ -11,7 +11,7 @@ const Products = () => {
       <StyleSection />
       {/* <RenderProducts /> */}
       {/* <ProductComponent /> */}
-      {/* <ProductList /> */}
+      <ProductList />
     </div>
   );
 };

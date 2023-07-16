@@ -4,23 +4,22 @@ const app = express();
 const mysql = require("mysql");
 const path = require("path");
 const bodyParser = require("body-parser");
-const port = 5000;
 const cors = require("cors");
-
-app.use(
-  cors({
-    origin: "*",
-  })
-);
+const port = 5000;
 
 app.use(express.json());
+app.use((req, res, next) => {
+  res.setHeader("Access-Control-Allow-Origin", "http://localhost:3000"); // Replace with the origin of your frontend server
+  res.setHeader("Access-Control-Allow-Methods", "GET, POST, PUT, DELETE");
+  res.setHeader("Access-Control-Allow-Headers", "Content-Type");
+  next();
+});
 const connection = mysql.createConnection({
-  host: "127.0.0.1",
+  host: "localhost",
   user: "root",
   password: "password",
   database: "Ecomm",
 });
-
 connection.connect((error) => {
   if (error) {
     console.error("Error connecting to the database:", error);
@@ -28,21 +27,50 @@ connection.connect((error) => {
     console.log("Connected to the database!");
   }
 });
-
-app.get("/jsondata", (req, res) => {
+// read all data from the mysql database
+app.get("/allproducts", (req, res) => {
   const query = "SELECT * FROM products";
   connection.query(query, (error, results) => {
     if (error) {
       console.error("Error executing the query:", error);
       res.status(500).send("Internal Server Error");
     } else {
-      // console.log(results);
-      let data = Object.values(JSON.parse(JSON.stringify(results)));
-      console.log(data);
-      res.status(200).send(JSON.stringify(data));
+      res.status(200).json(results);
     }
   });
 });
+app.listen(port, () => {
+  console.log(`App is running on port ${port}...`);
+});
+
+// app.use(express.json());
+// const connection = mysql.createConnection({
+//   host: "127.0.0.1",
+//   user: "root",
+//   password: "password",
+//   database: "Ecomm",
+// });
+
+// connection.connect((error) => {
+//   if (error) {
+//     console.error("Error connecting to the database:", error);
+//   } else {
+//     console.log("Connected to the database!");
+//   }
+// });
+
+// app.get("/jsondata", (req, res) => {
+//   const query = "SELECT * FROM products";
+//   connection.query(query, (error, results) => {
+//     if (error) {
+//       console.error("Error executing the query:", error);
+//       res.status(500).send("Internal Server Error");
+//     } else {
+//       console.log({ results });
+//       res.status(200).json(results);
+//     }
+//   });
+// });
 
 // app.get("/aliproducts", (req, res) => {
 //   const query = "SELECT * FROM products WHERE name LIKE 'ali%'";
@@ -68,17 +96,17 @@ app.get("/jsondata", (req, res) => {
 //   });
 // });
 
-app.get("/daisyproducts", (req, res) => {
-  const query = "SELECT * FROM products WHERE name LIKE 'daisy%'";
-  connection.query(query, (error, results) => {
-    if (error) {
-      console.error("Error executing the query:", error);
-      res.status(500).send("Internal Server Error");
-    } else {
-      res.status(200).json(results);
-    }
-  });
-});
+// app.get("/daisyproducts", (req, res) => {
+//   const query = "SELECT * FROM products WHERE name LIKE 'daisy%'";
+//   connection.query(query, (error, results) => {
+//     if (error) {
+//       console.error("Error executing the query:", error);
+//       res.status(500).send("Internal Server Error");
+//     } else {
+//       res.status(200).json(results);
+//     }
+//   });
+// });
 
 // app.get("/jenniferproducts", (req, res) => {
 //   const query = "SELECT * FROM products WHERE name LIKE 'jennifer%'";
@@ -128,6 +156,6 @@ app.get("/daisyproducts", (req, res) => {
 //   });
 // });
 
-app.listen(port, () => {
-  console.log(`App is running on port ${port}...`);
-});
+// app.listen(port, () => {
+//   console.log(`App is running on port ${port}...`);
+// });
