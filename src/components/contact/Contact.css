@@ -1,0 +1,218 @@
+body {
+  width: 100vw;
+  text-align: center;
+}
+/* --------------------------------------CONTACT FORM CODE-------------------------------------------- */
+h2 {
+  margin: 0;
+}
+
+.contact-header {
+  background-color: #e79e85;
+  color: #3f2218;
+  box-shadow: 0 4px 8px #00000061;
+  font-size: 150%;
+  font-weight: normal;
+  margin-bottom: 5%;
+  padding-top: 1%;
+}
+
+.contact {
+  color: #3f2218;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Layout Set Up of Form CSS Code. */
+form {
+  margin: 0;
+  padding: 0;
+  width: 75%;
+  font-size: 120%;
+  border-radius: 20px;
+}
+
+label {
+  font-size: 85%;
+}
+
+input {
+  padding: 2% 3%;
+  font-size: 70%;
+  border: 2px inset #3f22189b;
+  border-radius: 15px;
+  background-color: #fffff0;
+  width: 65%;
+
+  /* need to update default font in input */
+  font-family: Optima, sans-serif;
+  text-align: center;
+}
+
+textarea {
+  padding: 2%;
+  font-size: 70%;
+  border: 2px inset lightgray;
+  border-radius: 20px;
+  background-color: #fffff0;
+  width: 90%;
+  font-family: Optima, sans-serif;
+  text-align: center;
+}
+
+.fbutton {
+  padding: 2px 5px;
+  cursor: pointer;
+  width: 30%;
+  background-color: #cd4439;
+  color: #fff;
+  font-size: 12px;
+  margin: 10px 0;
+}
+
+.fbutton:hover {
+  background-color: #fff;
+  color: #cd4439;
+  border: 2px solid #cd4439;
+}
+
+/* ------------------------------------MISSION CODE----------------------------------- */
+section.mission {
+  text-align: center;
+  /* width: 100vw; */
+  padding: 0 8%;
+  background-image: url("/public/Photos/warpockets.webp");
+  background-size: cover;
+  background-position: center;
+  color: #f3e6ce;
+}
+
+.mission h2 {
+  padding-top: 5%;
+  font-size: 180%;
+  font-weight: bold;
+}
+
+.mission p {
+  font-size: 100%;
+  margin-bottom: 0;
+}
+
+/* --------------------------------------NEWSLETTER CODE-------------------------------------------- */
+
+.newsletter-header {
+  background-color: #e79e85;
+  color: #3f2218;
+  box-shadow: 0 4px 8px #00000061;
+  font-size: 150%;
+  font-weight: normal;
+  margin-bottom: 5%;
+  padding: 2% 0;
+}
+
+.newsletter {
+  color: #3f2218;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Small devices (landscape tablets) */
+@media (min-width: 768px) {
+  /* -----------CONTACT FORM CODE--------------- */
+
+  .contact-header {
+    font-size: 180%;
+    margin-bottom: 2%;
+  }
+
+  /* Layout Set Up of Form CSS Code. */
+  label {
+    font-size: 80%;
+  }
+
+  input {
+    padding: 1%;
+    font-size: 70%;
+    width: 40%;
+  }
+
+  textarea {
+    padding: 1%;
+    font-size: 70%;
+    width: 50%;
+    font-family: Optima, sans-serif;
+    text-align: center;
+  }
+
+  .fbutton {
+    width: 15%;
+    font-size: 70%;
+  }
+
+  /* ---------------MISSION Code--------------- */
+  .mission h2 {
+    padding-top: 1%;
+    font-size: 180%;
+  }
+
+  .mission p {
+    font-size: 100%;
+    padding: 0 8% 1%;
+  }
+
+  /* -------------NEWSLETTER CODE------------- */
+  .newsletter-header {
+    font-size: 180%;
+    margin-bottom: 2%;
+  }
+}
+
+/* Large devices (desktops) */
+@media (min-width: 1020px) {
+  /* -----------CONTACT FORM QUERY CODE--------------- */
+
+  .contact-header {
+    font-size: 180%;
+  }
+
+  label {
+    font-size: 100%;
+  }
+
+  input {
+    padding: 1%;
+    font-size: 80%;
+    width: 30%;
+    margin-bottom: 2%;
+  }
+
+  textarea {
+    padding: 1%;
+    font-size: 80%;
+    width: 40%;
+  }
+
+  .fbutton {
+    width: 10%;
+    font-size: 80%;
+  }
+
+  /* ---------------MISSION Code--------------- */
+  .mission h2 {
+    font-size: 200%;
+  }
+
+  .mission p {
+    font-size: 150%;
+    padding: 0 10% 2%;
+  }
+
+  /* -------------NEWSLETTER CODE------------- */
+
+  .newsletter-header {
+    font-size: 180%;
+    margin-bottom: 1%;
+  }
+}

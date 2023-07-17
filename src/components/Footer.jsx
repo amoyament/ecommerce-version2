@@ -6,37 +6,37 @@ const Footer = () => {
     <div>
       <footer>
         {/* <!-- Social Media links --> */}
-        <section class="footer-section" id="footer-s1">
-          <ul class="social-icons">
+        <section className="footer-section" id="footer-s1">
+          <ul className="social-icons">
             <li>
               <a href="https://www.facebook.com/">
-                <img src="photos/iconfb.png" alt="Facebook Icon" class="socialbutton" />
+                <img src="photos/iconfb.png" alt="Facebook Icon" className="socialbutton" />
               </a>
             </li>
 
             <li>
               <a href="https://www.instagram.com/">
-                <img src="photos/iconinsta.png" alt="Instagram Icon" class="socialbutton" />
+                <img src="photos/iconinsta.png" alt="Instagram Icon" className="socialbutton" />
               </a>
             </li>
 
             <li>
               <a href="https://www.snapchat.com/">
-                <img src="photos/iconsnap.png" alt="Snapchat Icon" class="socialbutton" />
+                <img src="photos/iconsnap.png" alt="Snapchat Icon" className="socialbutton" />
               </a>
             </li>
 
             <li>
               <a href="https://www.twitter.com/">
-                <img src="photos/icontwit.png" alt="Twitter Icon" class="socialbutton" />
+                <img src="photos/icontwit.png" alt="Twitter Icon" className="socialbutton" />
               </a>
             </li>
           </ul>
         </section>
         {/* <!-- Other company info --> */}
-        <section class="footer-section" id="footer-s2">
-          <h5>COMPANY INFO</h5>
-          <ul>
+        <section className="footer-section" id="footer-s2">
+          <h5 className="section-title">COMPANY INFO</h5>
+          <ul className="section-list">
             <li>
               <a href="../contact/indexCo.html">About Us</a>
             </li>
@@ -48,9 +48,9 @@ const Footer = () => {
             </li>
           </ul>
         </section>
-        <section class="footer-section" id="footer-s3">
-          <h5>SUPPORT</h5>
-          <ul>
+        <section className="footer-section" id="footer-s3">
+          <h5 className="section-title">SUPPORT</h5>
+          <ul className="section-list">
             <li>
               <a href="../contact/indexCo.html">Shipping</a>
             </li>
@@ -62,7 +62,7 @@ const Footer = () => {
             </li>
           </ul>
         </section>
-        <section class="footer-section" id="footer-s4">
+        <section className="footer-section" id="footer-s4">
           &copy; 2023 Effortless Threads. All Rights Reserved.
         </section>
       </footer>

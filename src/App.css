@@ -3,3 +3,11 @@ body {
   line-height: 1.5;
   width: 100vw;
 }
+
+html,
+body,
+#root {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}

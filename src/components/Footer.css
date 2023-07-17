@@ -2,6 +2,7 @@
 
 /* Set up grid template to place different footer info in different places */
 footer {
+  width: 100vw;
   background-color: #007065;
   color: #f3e6ce;
   display: grid;
@@ -68,6 +69,15 @@ footer {
   grid-row: 3;
   grid-column: 1 / span 2;
 }
+
+.section-title {
+  margin: 0; /* Reset margin to remove any default spacing */
+}
+
+.section-list {
+  padding-left: 0; /* Reset left padding to remove any default spacing */
+}
+
 /* Small devices (landscape tablets) */
 @media (min-width: 768px) {
   /* -------------FOOTER QUERY CODE------------ */
