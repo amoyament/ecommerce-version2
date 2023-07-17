@@ -1,3 +1,9 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 /* ------------------------------------Footer Code----------------------------------- */
 
 /* Set up grid template to place different footer info in different places */
