@@ -22,16 +22,16 @@ const NewArrivalsSlider = () => {
     <div className="slider-container">
       <Slider {...settings}>
         <div>
-          <img src=".//public/photos/slide1.webp" alt="Ali's Set: Plaid blazer and slacks set." />
+          <img src="../photos/slide1.webp" alt="Ali's Set: Plaid blazer and slacks set." />
         </div>
         <div>
           <img
-            src="./photos/slide2.webp"
+            src="../photos/slide2.webp"
             alt="Jennifer's Skirt: Dark green skirt with gold buttons."
           />
         </div>
         <div>
-          <img src="./photos/slide3.webp" alt="Jennifer's Set: Mustard blazer and slacks set" />
+          <img src="../photos/slide3.webp" alt="Jennifer's Set: Mustard blazer and slacks set" />
         </div>
       </Slider>
     </div>
