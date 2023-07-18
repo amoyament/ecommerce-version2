@@ -1,40 +1,43 @@
+// Import required modules
 const fs = require("fs");
 const express = require("express");
 const app = express();
 const mysql = require("mysql");
-const path = require("path");
-const bodyParser = require("body-parser");
 const cors = require("cors");
+
+// Set port number
 const port = 5000;
 
+// Enable JSON parsing and CORS
 app.use(express.json());
-app.use((req, res, next) => {
-  res.setHeader("Access-Control-Allow-Origin", "http://localhost:3000");
-  res.setHeader("Access-Control-Allow-Methods", "GET, POST, PUT, DELETE");
-  res.setHeader("Access-Control-Allow-Headers", "Content-Type");
-  next();
-});
+app.use(cors());
 
+// Connect to MySQL database
 const connection = mysql.createConnection({
-  host: "localhost",
+  host: "127.0.0.1",
   user: "root",
   password: "password",
   database: "Ecomm",
 });
 
+// Handle connection errors
 connection.connect((error) => {
   if (error) {
-    console.error("Error connecting to the database:", error);
+    console.error("Error connecting to database: ", error);
   } else {
-    console.log("Connected to the database!");
+    console.log("Connected to database!");
   }
 });
-// read all data from the mysql database
+
+// Route to get all products
 app.get("/allproducts", (req, res) => {
+  // SQL query
   const query = "SELECT * FROM products";
+
+  // Execute query
   connection.query(query, (error, results) => {
     if (error) {
-      console.error("Error executing the query:", error);
+      console.error("Error executing query: ", error);
       res.status(500).send("Internal Server Error");
     } else {
       res.status(200).json(results);
@@ -107,6 +110,7 @@ app.get("/mirabelproducts", (req, res) => {
   });
 });
 
+// Start server
 app.listen(port, () => {
-  console.log(`App is running on port ${port}...`);
+  console.log(`App running on port ${port}`);
 });
