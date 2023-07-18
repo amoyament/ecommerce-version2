@@ -25,7 +25,7 @@
   },
   "scripts": {
     "start": "npm run client",
-    "start:concurrently": "concurrently \"npm run server\" \"npm run client\"",
+    "start:concurrently": "npm run start && cd ../backend && npm run start",
     "client": "react-scripts start",
     "build": "react-scripts build"
   },
