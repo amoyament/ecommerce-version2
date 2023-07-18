@@ -22,7 +22,7 @@ const NewArrivalsSlider = () => {
     <div className="slider-container">
       <Slider {...settings}>
         <div>
-          <img src="./photos/slide1.webp" alt="Ali's Set: Plaid blazer and slacks set." />
+          <img src=".//public/photos/slide1.webp" alt="Ali's Set: Plaid blazer and slacks set." />
         </div>
         <div>
           <img
