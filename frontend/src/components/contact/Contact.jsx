@@ -38,7 +38,7 @@ const Contact = () => {
   const handleContactSubmit = (event) => {
     event.preventDefault(); // Prevent form submission if validation fails
 
-    // Perform custom validation logic
+    // Validation logic
     if (!isValidName(contactFormData.name)) {
       alert("Please enter a valid name.");
       return;

@@ -1,4 +1,4 @@
-// export default NewArrivalsSlider;
+// Import react and built in slider
 import React from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
@@ -6,14 +6,15 @@ import "slick-carousel/slick/slick-theme.css";
 import "./NewArrivalsSlider.css";
 
 const NewArrivalsSlider = () => {
+  //Set configurations for slider
   const settings = {
     dots: true,
     infinite: true,
     speed: 800,
     slidesToShow: 1,
     slidesToScroll: 1,
-    centerMode: true, // Enable center mode
-    centerPadding: "15%", // Adjust the padding to control visibility of adjacent slides
+    centerMode: true,
+    centerPadding: "15%",
     swipe: true,
     swipeToSlide: true,
   };

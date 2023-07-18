@@ -4,9 +4,6 @@
   box-sizing: border-box;
 }
 
-/* ------------------------------------Footer Code----------------------------------- */
-
-/* Set up grid template to place different footer info in different places */
 footer {
   width: 100vw;
   background-color: #007065;
@@ -31,7 +28,6 @@ footer {
   left: 0;
 }
 
-/* Tried to make % but wouldn't inline when in % */
 .socialbutton {
   height: 20px;
   width: 20px;
@@ -77,16 +73,14 @@ footer {
 }
 
 .section-title {
-  margin: 0; /* Reset margin to remove any default spacing */
+  margin: 0;
 }
 
 .section-list {
-  padding-left: 0; /* Reset left padding to remove any default spacing */
+  padding-left: 0;
 }
 
-/* Small devices (landscape tablets) */
 @media (min-width: 768px) {
-  /* -------------FOOTER QUERY CODE------------ */
   .socialbutton {
     height: 30px;
     width: 30px;
@@ -111,13 +105,11 @@ footer {
   }
 
   .footer-section li {
-    /* Could not get % to display right */
     height: 30px;
   }
 }
 
 @media (min-width: 1020px) {
-  /* -------------FOOTER QUERY CODE------------ */
   .social-icons li {
     padding: 1% 7% 0;
     margin: 0;

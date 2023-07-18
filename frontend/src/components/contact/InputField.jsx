@@ -1,10 +1,12 @@
 import React from "react";
 
+// Pass in props label, name, etc..
 const InputField = ({ label, name, placeholder, type, value, onChange, className }) => {
   return (
     <>
       <label>{label}</label>
       <br />
+      {/* Props for textarea */}
       {type === "textarea" ? (
         <textarea
           name={name}
@@ -15,6 +17,7 @@ const InputField = ({ label, name, placeholder, type, value, onChange, className
           className={className}
         />
       ) : (
+        //Props for all other inputs
         <input
           type={type}
           name={name}

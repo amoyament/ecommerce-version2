@@ -78,7 +78,7 @@ label {
   color: #f3e6ce;
   font-size: 1em;
   text-align: center;
-  width: calc(100% - 40px); /* Adjusted width to include padding on both sides */
+  width: calc(100% - 40px);
   height: 100%;
   display: flex;
   padding: 10px;

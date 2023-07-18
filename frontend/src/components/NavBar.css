@@ -4,16 +4,10 @@
   box-sizing: border-box;
 }
 
-/* --------------------------------------HEADER CODE-------------------------------------------- */
 header {
   justify-content: center;
   box-shadow: 0 4px 8px #00000061;
 }
-
-/* --------------------------------------NAVBAR CODE-------------------------------------------- */
-
-/* Postion sticky to keep header at top of page always
-zindex keeps nav bar on top of .hero background image */
 
 nav {
   z-index: 2;
@@ -46,9 +40,6 @@ nav h1 a {
   list-style: none;
 }
 
-/* display: inline;
-  Display none takes away links unless clicked in JS
-  /* Border top and bottom to make extened links pop */
 #links {
   display: none;
   font-size: 125%;
@@ -58,12 +49,11 @@ nav h1 a {
 }
 
 nav ul {
-  list-style: none; /* Remove bullets from list items */
+  list-style: none;
   padding: 0;
   margin: 0;
 }
 
-/* transition time to smoothen out new color on hover transition */
 nav ul li a {
   color: wheat;
   text-decoration: none;
@@ -80,8 +70,6 @@ nav ul li a:hover {
 }
 
 @media (min-width: 768px) {
-  /* ------------NAVBAR QUERY CODE-------------- */
-
   nav h1 {
     font-size: 300%;
   }
@@ -96,7 +84,6 @@ nav ul li a:hover {
   }
 }
 @media (min-width: 1020px) {
-  /* ------------NAVBAR QUERY CODE-------------- */
   nav h1 {
     font-size: 300%;
     line-height: 1.1;

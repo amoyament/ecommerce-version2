@@ -1,3 +1,4 @@
+// Import React hooks, components, css
 import { useState } from "react";
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 import { FaBars } from "react-icons/fa";
@@ -8,13 +9,16 @@ import Products from "./products/Products";
 import "./NavBar.css";
 
 function NavBar() {
+  // State to toggle navbar links
   const [showLinks, setShowLinks] = useState(false);
 
+  // Function to toggle links
   const toggleLinks = () => {
     setShowLinks(!showLinks);
   };
 
   return (
+    // Router provides browser history
     <Router>
       <div className="header">
         <nav className="nav">
@@ -47,10 +51,7 @@ function NavBar() {
           </div>
         </nav>
       </div>
-
-      {/* This is where pathing will occur */}
       <Routes>
-        {/* route renders url paths */}
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
         <Route path="/contact" element={<Contact />} />

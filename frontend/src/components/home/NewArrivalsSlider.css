@@ -1,22 +1,18 @@
-/* Slider container */
 .slider-container {
   max-width: 200px;
   margin: 0 auto 10px;
 }
 
-/* Slide */
 .slick-slide {
   text-align: center;
-  position: relative; /* Add position relative for overlay positioning */
+  position: relative;
 }
 
-/* Slide image */
 .slick-slide img {
   max-width: 100%;
   height: auto;
 }
 
-/* Non-centered slide overlay */
 .slick-slide:not(.slick-center)::before {
   content: "";
   position: absolute;
@@ -24,28 +20,24 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.3); /* Adjust opacity and color as needed */
-  pointer-events: none; /* Ensure the overlay does not block interactions with the image */
+  background-color: rgba(0, 0, 0, 0.3);
+  pointer-events: none;
 }
 
-/* Dots container */
 .slick-dots {
   display: flex;
   justify-content: center;
   margin-top: 20px;
 }
 
-/* Individual dot */
 .slick-dots li button:before {
   color: #bbb;
 }
 
-/* Active dot */
 .slick-dots li.slick-active button:before {
   color: #333;
 }
 
-/* Media query for screens with a minimum width of 768px (tablets) */
 @media (min-width: 768px) {
   /* Slider container */
   .slider-container {
@@ -53,30 +45,24 @@
     margin: 0 auto;
   }
 
-  /* Non-centered slide overlay */
   .slick-slide:not(.slick-center)::before {
-    background-color: rgba(0, 0, 0, 0.5); /* Adjust opacity and color as needed for tablets */
+    background-color: rgba(0, 0, 0, 0.5);
   }
 
-  /* Dots container */
   .slick-dots {
     margin-top: 30px;
   }
 }
 
-/* Media query for screens with a minimum width of 1020px (desktop) */
 @media (min-width: 1020px) {
-  /* Slider container */
   .slider-container {
     max-width: 700px;
   }
 
-  /* Non-centered slide overlay */
   .slick-slide:not(.slick-center)::before {
-    background-color: rgba(0, 0, 0, 0.7); /* Adjust opacity and color as needed for desktop */
+    background-color: rgba(0, 0, 0, 0.7);
   }
 
-  /* Dots container */
   .slick-dots {
     margin-top: 40px;
   }

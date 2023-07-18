@@ -38,13 +38,13 @@ const Footer = () => {
           <h5 className="section-title">COMPANY INFO</h5>
           <ul className="section-list">
             <li>
-              <a href="../contact/indexCo.html">About Us</a>
+              <a href="#">About Us</a>
             </li>
             <li>
-              <a href="../contact/indexCo.html">Social Responsibility</a>
+              <a href="#">Social Responsibility</a>
             </li>
             <li>
-              <a href="../contact/indexCo.html">Student Discount</a>
+              <a href="#">Student Discount</a>
             </li>
           </ul>
         </section>
@@ -52,13 +52,13 @@ const Footer = () => {
           <h5 className="section-title">SUPPORT</h5>
           <ul className="section-list">
             <li>
-              <a href="../contact/indexCo.html">Shipping</a>
+              <a href="#">Shipping</a>
             </li>
             <li>
-              <a href="../contact/indexCo.html">Returns and Refunds</a>
+              <a href="#">Returns and Refunds</a>
             </li>
             <li>
-              <a href="../contact/indexCo.html">Size Guide</a>
+              <a href="#">Size Guide</a>
             </li>
           </ul>
         </section>
