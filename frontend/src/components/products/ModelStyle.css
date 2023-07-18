@@ -57,7 +57,6 @@ h3.style-title {
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-/* Small devices (landscape tablets) */
 @media (min-width: 768px) {
   .row {
     justify-content: center;
@@ -65,7 +64,6 @@ h3.style-title {
   }
 }
 
-/* Large devices (desktops) */
 @media (min-width: 1020px) {
   .row {
     display: flex;

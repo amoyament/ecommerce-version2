@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import NewArrivalsSlider from "./NewArrivalsSlider";
-import "./Home.css"; // Import the CSS file for styling
+import "./Home.css";
 
 const Home = () => {
   return (
