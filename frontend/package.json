@@ -21,7 +21,8 @@
     "start": "npm run client",
     "start:concurrently": "concurrently \"npm run server\" \"npm run client\"",
     "client": "react-scripts start",
-    "build": "react-scripts build"
+    "build": "react-scripts build",
+    "test": "jest"
   },
   "eslintConfig": {
     "extends": [
@@ -42,6 +43,8 @@
     ]
   },
   "devDependencies": {
-    "concurrently": "^8.2.0"
+    "@babel/preset-react": "^7.22.5",
+    "concurrently": "^8.2.0",
+    "jest": "^27.5.1"
   }
 }
